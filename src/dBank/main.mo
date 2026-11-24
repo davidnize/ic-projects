@@ -1,9 +1,9 @@
-import Debug "mo:base/Debug"
+import Debug "mo:core/Debug";
 
 actor dbank {
- var currentNum = 200;
+  var currentNum = 200;
 
   currentNum := 100;
-  
-  Debug.print(debug_show(currentNum))
+
+  Debug.print(debug_show(currentNum));
 }

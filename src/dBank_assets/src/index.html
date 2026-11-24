@@ -12,11 +12,18 @@
     <main>
       <img src="logo.png" alt="DFINITY logo" />
       <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+        <h1>dBank</h1>
+        <h2>Current Balance</h2>
+        <section id="value">0</section>
+
+        <label for="input-amount">Top Up Amount: &nbsp;</label>
+        <input id="input-amount" name="input-amount" alt="Top Up Amount" type="number" min="0" step="1" />
+
+        <label for="withdrawal-amount">Withdrawal Amount: &nbsp;</label>
+        <input id="withdrawal-amount" name="withdrawal-amount" alt="Withdrawal Amount" type="number" min="0" step="1" />
+
+        <button id="submit-btn" type="submit">Update Balance</button>
       </form>
-      <section id="greeting"></section>
     </main>
   </body>
 </html>

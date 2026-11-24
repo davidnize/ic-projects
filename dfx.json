@@ -1,7 +1,7 @@
 {
   "canisters": {
     "dBank": {
-      "main": "src/dBank/main.mo",
+      "main": "src/dbank/main.mo",
       "type": "motoko"
     },
     "dBank_assets": {
