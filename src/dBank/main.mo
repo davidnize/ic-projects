@@ -1,7 +1,7 @@
 import Debug "mo:core/Debug";
 
-actor dbank {
-  var currentNum = 200;
+persistent actor dbank {
+  transient var currentNum = 200;
 
   currentNum := 100;
 
