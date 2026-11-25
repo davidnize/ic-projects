@@ -28,3 +28,12 @@ for (const canister of fs.readdirSync(source, { withFileTypes: true })) {
     }
   }
 }
+
+for (const canister of fs.readdirSync(destination, { withFileTypes: true })) {
+  const indexFile = path.join(destination, canister.name, "index.js");
+  if (!canister.isDirectory() || !fs.existsSync(indexFile)) continue;
+  const fixed = fs
+    .readFileSync(indexFile, "utf8")
+    .replace(/\{ canister_name_ident_uppercase \}/g, canister.name.toUpperCase());
+  fs.writeFileSync(indexFile, fixed);
+}

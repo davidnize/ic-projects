@@ -6,4 +6,10 @@ persistent actor dbank {
   currentNum := 100;
 
   Debug.print(debug_show(currentNum));
+
+  // public func topUp() : async () {
+  //   currentNum += 1;
+
+  //   Debug.print(debug_show (currentNum));
+  // }
 }
